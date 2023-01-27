@@ -16,16 +16,8 @@
 			property="og:description"
 			content="{{ config['simple_description'] or '' }}"
 		/>
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:creator" content="@teamGradio" />
-		<meta name="twitter:title" content="{{ config['title'] or '' }}" />
-		<meta
-			name="twitter:description"
-			content="{{ config['simple_description'] or '' }}"
-		/>
-		<meta name="twitter:image" content="{{ config['thumbnail'] or '' }}" />
 
-		<script>
+		<!-- <script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments);
@@ -33,24 +25,10 @@
 			gtag("js", new Date());
 			gtag("config", "UA-156449732-1");
 			window.__gradio_mode__ = "app";
-		</script>
+		</script> -->
 
 		%gradio_config%
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin="anonymous"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"
-			rel="stylesheet"
-		/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js"></script>
 	</head>
 
